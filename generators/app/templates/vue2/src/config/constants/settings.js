@@ -1,0 +1,1 @@
+export const LANGUAGE_KEY = 'H5_LANGUAGE_KEY';

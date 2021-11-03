@@ -1,0 +1,27 @@
+{
+  "name": "generator-vue2-tailwind",
+  "version": "1.0.0",
+  "description": "vue2 tailwind template",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "vue",
+    "tailwind"
+  ],
+  "dependencies": {
+    "command-exists": "^1.2.9",
+    "yeoman-generator": "^5.4.2",
+    "yosay": "^2.0.2"
+  },
+  "author": {
+    "email": "1556597051@qq.com",
+    "name": "zhouzhenyu"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+},
+  "license": "ISC"
+}

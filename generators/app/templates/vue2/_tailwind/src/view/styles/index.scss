@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html,
+  body {
+    height: 100%;
+    <% if(platform==='h5') {%>font-size: 10vw;
+    <%}-%>font-family: PingFangSC-Regular, 'PingFang SC', -apple-system, miui, Tahoma, 'Helvetica Neue',
+      BlinkMacSystemFont, 'Microsoft YaHei', sans-serif;
+    box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding-top: constant(safe-area-inset-top);
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
+    padding-bottom: constant(safe-area-inset-bottom);
+    /* 兼容 iOS < 11.2 */
+    padding-bottom: env(safe-area-inset-bottom);
+    /* 兼容 iOS >= 11.2 */
+  }
+
+  label {
+    font-weight: 700;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  #app {
+    height: 100%;
+  }
+
+  a:focus,
+  a:active {
+    outline: none;
+  }
+
+  a,
+  a:focus,
+  a:hover {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  div:focus {
+    outline: none;
+  }
+  // main-container全局样式
+  .app-container {
+    padding: 20px;
+  }
+
+  .van-wrap-block {
+    background-color: #fff;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  [v-cloak] {
+    display: none;
+  }
+
+  .van-image-preview__image img {
+    background: #fff;
+  }
+}
+@layer utilities {
+  .text-smer {
+    @apply text-sm;
+    transform: scale(0.83);
+    transform-origin: right;
+  }
+  .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .flyin-to-cart {
+    animation: flyin 0.5s ease-in-out;
+  }
+
+  .rounded-sm {
+    border-radius: 6px;
+  }
+  .rounded {
+    border-radius: 8px;
+  }
+  .rounded-md {
+    border-radius: 10px;
+  }
+
+  .w-full {
+    width: 100% !important;
+  }
+  .h-full {
+    height: 100% !important;
+  }
+
+  .box-full {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

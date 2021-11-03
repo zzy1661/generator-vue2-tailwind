@@ -1,0 +1,31 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  "editor.wrappingIndent": "indent",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 60000000,
+  "less.validate": false,
+  "scss.validate": false,
+  "css.validate": false,
+  "vetur.validation.style": false,
+  "tailwindCSS.rootFontSize": 37.5,
+  "html.format.wrapAttributes": "force",
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".tsx",
+      ".ts"
+    ]
+  },
+  "eslint.run": "onSave",
+  "eslint.validate": [
+    "javascript",
+    "html",
+    "vue"
+  ]
+}
