@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/zzy1661/generator-vue2-tailwind.git"
 },
   "license": "ISC"
 }
