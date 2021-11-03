@@ -1,6 +1,6 @@
 {
-  "name": "generator-vue2-tailwind",
-  "version": "1.0.0",
+  "name": "@bressanone/generator-vue2-tailwind",
+  "version": "1.0.1",
   "description": "vue2 tailwind template",
   "files": [
     "generators"

@@ -6,11 +6,9 @@ module.exports = class extends Generator {
     super(args, opts);
     this.argument("appname", { type: String, required: false });
   }
-  // - Your initialization methods (checking current project state, getting configs, etc)
   async initializing() {
     this.log(yosay('Welcome to the vue2-tailwind generator'));
   }
-  // - Where you prompt users for options (where you’d call this.prompt())
   async prompting() {
     const answers = await this.prompt([
       {
@@ -31,7 +29,6 @@ module.exports = class extends Generator {
       }
     ])
     this.answers = answers;
-  
     this.destinationRoot('./' + this.answers.name)
     this.env.cwd = this.destinationRoot()
   }
@@ -44,7 +41,6 @@ module.exports = class extends Generator {
         return destinationFile;
       }
     },globOptions:{dot:true,ignore:[this.answers.tailwind?'**/_no_tailwind/**':'**/_tailwind/**']}})
-    this.spawnCommand('git','init')
     const pkgJson = {
       "name": this.answers.name || '',
       "version": "0.0.1",
